@@ -46,3 +46,5 @@ def get_ans_equivalence(row):
 def get_answerability_equivalence(row):
     return int(row['true_ans_type'] == row['pred_ans_type'])
 ```
+
+$2e-2$ is the $2\%$ answer tolerance we used to account for the difference b/w the GT & predicted answer, due to round-off or other approximation errors. You can adjust it as per your desired tolerance.
